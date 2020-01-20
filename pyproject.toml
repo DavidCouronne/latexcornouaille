@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "latexcornouaille"
-version = "0.1.0"
+version = "0.1.2"
 description = "custom python package for latex"
 authors = ["David Couronné <couronne.david@gmail.com>"]
 license = "MIT"
