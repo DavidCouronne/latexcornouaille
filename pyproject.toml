@@ -11,7 +11,7 @@ python = "^3.4"
 [tool.poetry.dev-dependencies]
 
 [tool.poetry.scripts]
-latexconouaille = 'latexconouaille.cli:main'
+latexcornouaille = 'latexcornouaille.cli:main'
 
 [build-system]
 requires = ["poetry>=0.12"]
