@@ -9,6 +9,7 @@ license = "MIT"
 python = "^3.4"
 
 [tool.poetry.dev-dependencies]
+autopep8 = "^1.5"
 
 [tool.poetry.scripts]
 latexcornouaille = 'latexcornouaille.cli:main'
