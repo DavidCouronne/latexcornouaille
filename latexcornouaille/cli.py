@@ -1,10 +1,7 @@
 import codecs
+import getopt
 import os
 import sys
-import getopt
-
-
-
 
 
 def usage():
@@ -16,7 +13,7 @@ def usage():
 
 def basic_clean(rep):
     liste_ext = [".cor", ".bar", ".log", ".dvi", ".bbl", ".blg",
-             ".out", ".ps", ".idx", ".ilg", ".ind", ".lof", ".lot"]
+                 ".out", ".ps", ".idx", ".ilg", ".ind", ".lof", ".lot"]
     for fichier in os.listdir(rep):
         try:
             complet = rep + "/" + fichier
@@ -25,17 +22,17 @@ def basic_clean(rep):
                 os.remove(complet)
         except:
             print("Erreur")
+
+
 def process_file(file):
     pass
 
 
 def deep_clean(rep):
-    liste_ext=[".cor",".bar",".aux",".log",".dvi"
-           ,".bbl",".blg",".out",".synctex"
-           ,".ps",".toc",".lua",".lub",".tab"
-           ,".idx",".ilg",".ind",".lof",".lot"]
+    liste_ext = [".cor", ".bar", ".aux", ".log", ".dvi", ".bbl", ".blg", ".out", ".synctex",
+                 ".ps", ".toc", ".lua", ".lub", ".tab", ".idx", ".ilg", ".ind", ".lof", ".lot"]
     try:
-        if rep ==".":
+        if rep == ".":
             list_files = os.listdir()
         else:
             list_files = os.listdir(rep)
@@ -49,7 +46,7 @@ def deep_clean(rep):
                 print("Erreur")
     except:
         print('Erreur')
-    
+
 
 def main():
     argv = sys.argv[1:]
